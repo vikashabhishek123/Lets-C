@@ -53,3 +53,10 @@ int main() {
 
     return 0;
 }
+
+
+//TODAY'S NOTE 
+/*
+scanf("%19s", Name);    // ✅ Correct
+scanf("%19s", &Name);   // ❌ Don't use
+*/
