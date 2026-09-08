@@ -30,4 +30,4 @@ int main() {
     return 0;
 }
 
-//Question 2 
+//Question 2 we will solve question on ...
