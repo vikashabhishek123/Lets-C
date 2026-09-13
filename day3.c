@@ -27,3 +27,19 @@ int main(){
     printf("The sum of total number is %d",sum);
     return 0;
 }
+
+//Question3 Take the input from the user and find the factorial of it
+#include <stdio.h>
+int main(){
+    int a;
+    printf("Please enter the number till which you want factorial\n");
+    scanf("%d",&a);
+    int fact=1;
+    for(int i=1;i<=a;i++){
+        fact *= i;
+    
+    }
+    printf("The factorial of numbers that you enter is %d",fact);
+   
+    return 0;
+}

@@ -34,11 +34,10 @@ int main() {
 
 //Question write a program which take input in inches and convert into feet and inches
 
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int main() {
-    
+
    int inches,feet,remaining_inches;
    printf("Please enter how many inches");
    scanf("%d",&inches);
