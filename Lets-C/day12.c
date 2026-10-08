@@ -25,3 +25,25 @@ int main(){
         }
     return 0;
 }
+
+
+//Q2 WAP of string in which user enter the character and we have to find the frequecny of that character
+
+#include <stdio.h>
+int main(){
+    char str[100],ch;
+    int count=0;
+
+    printf("Please enter a string\n");
+    fgets(str,100,stdin);
+
+    printf("Please enter the charcter who frequency you want to check\n");
+    scanf("%c",&ch);
+
+    for(int i=0;str[i] != '\0';i++){
+        if(str[i]==ch){
+            count++;
+        }
+    }
+    printf("frequency of %c is %d",ch,count);
+}
