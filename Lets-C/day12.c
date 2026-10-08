@@ -1,30 +1,27 @@
-//Solving questions on array
-
-//Question 1
-//WAP program to add two arrays
+//Here i am going to write a program which check that the given word is palindrome  or not
 #include <stdio.h>
+#include <string.h>
 int main(){
-    int a[5],b[5],sum[5];
+    char str[100];
+    int length,i;
+    int count=0;
 
-    //Input the first array element
-    printf("Please enter the elements of first array");
-    for(int i=0;i<5;i++){
-        scanf("%d",&a[i]);
-    }
-    //Input the second araay element
-    printf("Please enter the element of second element");
-    for(int i=0;i<5;i++){
-        scanf("%d",&b[i]);
-    }
+    printf("Please enter the string\n");
+    scanf("%s",str);
 
-    //addition of both arrays
-    for(int i=0;i<5;i++){
-        sum[i]=a[i]+b[i];
+    length=strlen(str);
+    for(i=0;i<length/2;i++){
+        if(str[i]!=str[length-i-1]){
+            count++;
+
+        }
+        
+
     }
-    //print the result
-    printf("Addition of two arrays");
-    for(int i=0;i<5;i++){
-        printf("%d",sum[i]); 
-       }
-       return 0;
+    if(count==0){
+            printf("It is palindrome\n");
+        }else{
+            printf("It is not a palindrome");
+        }
+    return 0;
 }
